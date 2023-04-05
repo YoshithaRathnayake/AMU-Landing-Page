@@ -1,0 +1,552 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-animation-name: ScreenFade;
+    -webkit-animation-duration: 3s;
+    animation-name: ScreenFade;
+    animation-duration: 3s;
+    background: black;
+}
+
+/* Screen Fading Animation */
+
+@-webkit-keyframes ScreenFade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes ScreenFade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Scroll Behavior */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 74px;
+}
+
+.banner1,
+.banner2,
+.banner3,
+.banner4 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: absolute;
+    backdrop-filter: blur(3px);
+    top: 0;
+}
+
+.sliderImage {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-size: cover;
+    background-position: center;
+    transform: translate(-50%, -50%);
+    animation: zoomout 5s linear infinite;
+}
+
+@keyframes zoomout {
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.banner1 {
+    animation: slide1 20s linear infinite;
+}
+
+.banner2 {
+    animation: slide2 20s linear infinite;
+}
+
+.banner3 {
+    animation: slide3 20s linear infinite;
+}
+
+.banner4 {
+    animation: slide4 20s linear infinite;
+}
+
+
+@keyframes slide1 {
+    0% {
+        visibility: visible;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    position: fixed;
+    height: 120px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+
+/* Affix */
+
+.affix {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 110px;
+    backdrop-filter: blur(20px);
+    animation-name: affix;
+    animation-duration: 1s;
+    -webkit-animation-name: affix;
+    -webkit-animation-duration: 1s;
+}
+
+/* Affix Animation */
+
+@keyframes affix {
+    from {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 120px;
+    }
+
+    to {
+        background-color: black;
+        opacity: 0.97;
+        backdrop-filter: blur(20px);
+        height: 110px;
+    }
+}
+
+@-webkit-keyframes affix {
+    from {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 120px;
+    }
+
+    to {
+        background-color: black;
+        opacity: 0.97;
+        backdrop-filter: blur(20px);
+        height: 110px;
+    }
+}
+
+/* Hover Effect for Anchor tags in Affix */
+
+.affix a:hover {
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Gradient Text in the Affix */
+
+.affix #gradient-text {
+    top: 30px;
+}
+
+/* Nav-Label in the Affix */
+
+.affix #nav-label {
+    top: 30px;
+}
+
+/* Nav-Links in the Affix */
+
+.affix .nav-links {
+    top: 40px;
+}
+
+
+/* Nav-Label */
+
+#nav-label {
+    height: 60px;
+    position: relative;
+    left: 100px;
+    top: 29px;
+    animation-name: NavLabel;
+    animation-duration: 2s;
+    -webkit-animation-name: NavLabel;
+    -webkit-animation-duration: 2s;
+}
+
+/* Nav-Label Loading Animation */
+
+@keyframes NavLabel {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 100px;
+    }
+}
+
+@-webkit-keyframes NavLabel {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 100px;
+    }
+}
+
+/* Nav-Links */
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    position: relative;
+    right: 100px;
+    top: 45px;
+    animation-name: NavLinks;
+    animation-duration: 2s;
+    -webkit-animation-name: NavLinks;
+    -webkit-animation-duration: 2s;
+}
+
+/* Nav-Links Loading Animation */
+
+@keyframes NavLinks {
+    from {
+        opacity: 0;
+        right: 0px;
+    }
+
+    to {
+        opacity: 1;
+        right: 100px;
+    }
+}
+
+@-webkit-keyframes NavLinks {
+    from {
+        opacity: 0;
+        right: 0px;
+    }
+
+    to {
+        opacity: 1;
+        right: 100px;
+    }
+}
+
+
+/* Nav-Items */
+
+.nav-items {
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* Hover Effect for Nav-Items */
+
+.nav-items:hover {
+    background-color: #5858588e;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Side-Bar Nav-Links */
+
+.side-nav {
+    background-color: rgba(29, 29, 29, 0.9);
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 250px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.97;
+    transform: translateX(-250px);
+    transition: transform 0.3s;
+}
+
+.nav--open .side-nav {
+    transform: translateX(0);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 1);
+}
+
+
+/* Side-Bar Nav-Items */
+
+.nav-item {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #c2c2c2;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 15px;
+    position: relative;
+    left: 10px;
+    top: 60px;
+    background: transform 0.2s;
+    text-transform: uppercase;
+}
+
+@keyframes SideBar {
+    from {
+        left: -40px;
+    }
+
+    to {
+        left: 10px;
+    }
+}
+
+@-webkit-keyframes SideBar {
+    from {
+        left: -40px;
+    }
+
+    to {
+        left: 10px;
+    }
+}
+
+.side-bar-links {
+    animation-name: SideBar;
+    animation-duration: 1.5s;
+    -webkit-animation-name: SideBar;
+    -webkit-animation-duration: 1.5s;
+}
+
+.nav-item>i {
+    margin-right: 15px;
+}
+
+.nav-item:hover {
+    background-color: #5858588e;
+    border-radius: 5px;
+    color: whitesmoke;
+    width: 230px;
+    font-size: 20px;
+}
+
+#nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(500px);
+    background: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+
+.nav--open #nav-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#side-label {
+    height: 60px;
+    position: relative;
+    left: 45px;
+    top: 25px;
+}
+
+#hamburger {
+    height: 30px;
+    position: fixed;
+    right: 70px;
+    bottom: 30px;
+    z-index: 100;
+    animation-name: menu;
+    animation-duration: 2s;
+    -webkit-animation-name: menu;
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes menu {
+    from {
+        right: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        right: 70px;
+    }
+}
+
+@-webkit-keyframes menu {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 100px;
+    }
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+#close {
+    height: 30px;
+    position: fixed;
+    right: 70px;
+    bottom: 30px;
+    z-index: 100;
+    animation-name: menu;
+    animation-duration: 2s;
+    -webkit-animation-name: menu;
+    -webkit-animation-duration: 2s;
+}
+
+#close:hover {
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 966px) {
+    #hamburger {
+        display: none;
+    }
+
+    #close {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 966px) {
+    #hamburger {
+        display: block;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
