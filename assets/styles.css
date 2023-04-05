@@ -399,7 +399,7 @@ html {
     padding: 12px 15px;
     position: relative;
     left: 10px;
-    top: 60px;
+    top: 120px;
     background: transform 0.2s;
     text-transform: uppercase;
 }
@@ -467,7 +467,7 @@ html {
     height: 60px;
     position: relative;
     left: 45px;
-    top: 25px;
+    top: 50px;
 }
 
 #hamburger {
@@ -548,5 +548,613 @@ html {
 
     .nav-links {
         display: none;
+    }
+}
+
+.main-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 180px;
+    left: 300px;
+    font-weight: 400;
+    text-shadow: 0 0 30px black;
+    animation-name: mainHeading;
+    animation-duration: 2s;
+    -webkit-animation-name: mainHeading;
+    -webkit-animation-duration: 2s;
+}
+
+.sack-logo {
+    height: 180px;
+    position: relative;
+    left: 100px;
+    top: 5px;
+    text-shadow: 0 0 50px black;
+    animation-name: sackLogo;
+    animation-duration: 2s;
+    -webkit-animation-name: sackLogo;
+    -webkit-animation-duration: 2s;
+}
+
+.second-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    color: rgb(185, 185, 185);
+    position: relative;
+    top: 180px;
+    left: 306px;
+    font-weight: 400;
+    text-shadow: 0 0 30px black;
+    animation-name: secondHeading;
+    animation-duration: 2s;
+    -webkit-animation-name: secondHeading;
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes mainHeading {
+    from {
+        opacity: 0;
+        left: 200px;
+    }
+
+    to {
+        opacity: 1;
+        left: 300px;
+    }
+}
+
+@-webkit-keyframes mainHeading {
+    from {
+        opacity: 0;
+        left: 400px;
+    }
+
+    to {
+        opacity: 1;
+        left: 300px;
+    }
+}
+
+@keyframes secondHeading {
+    from {
+        opacity: 0;
+        left: 400px;
+    }
+
+    to {
+        opacity: 1;
+        left: 306px;
+    }
+}
+
+@-webkit-keyframes secondHeading {
+    from {
+        opacity: 0;
+        left: 400px;
+    }
+
+    to {
+        opacity: 1;
+        left: 306px;
+    }
+}
+
+@keyframes sackLogo {
+    from {
+        opacity: 0;
+        height: 100px;
+        top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        height: 180px;
+        top: 5px;
+    }
+}
+
+@-webkit-keyframes sackLogo {
+    from {
+        opacity: 0;
+        height: 100px;
+        top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        height: 180px;
+        top: 5px;
+    }
+}
+
+@keyframes mobileHeading {
+    from {
+        opacity: 0;
+        left: 150px;
+    }
+
+    to {
+        opacity: 1;
+        left: 250px;
+    }
+}
+
+@-webkit-keyframes mobileHeading {
+    from {
+        opacity: 0;
+        left: 150px;
+    }
+
+    to {
+        opacity: 1;
+        left: 250px;
+    }
+}
+
+@keyframes mobileHeading2 {
+    from {
+        opacity: 0;
+        left: 350px;
+    }
+
+    to {
+        opacity: 1;
+        left: 256px;
+    }
+}
+
+@-webkit-keyframes mobileHeading2 {
+    from {
+        opacity: 0;
+        left: 350px;
+    }
+
+    to {
+        opacity: 1;
+        left: 256px;
+    }
+}
+
+@keyframes mobileSackLogo {
+    from {
+        opacity: 0;
+        height: 80px;
+        top: 60px;
+    }
+
+    to {
+        opacity: 1;
+        height: 160px;
+        top: 25px;
+    }
+}
+
+@-webkit-keyframes mobileSackLogo {
+    from {
+        opacity: 0;
+        height: 80px;
+        top: 60px;
+    }
+
+    to {
+        opacity: 1;
+        height: 160px;
+        top: 25px;
+    }
+}
+
+@keyframes mobile2Heading {
+    from {
+        opacity: 0;
+        left: 80px;
+    }
+
+    to {
+        opacity: 1;
+        left: 180px;
+    }
+}
+
+@-webkit-keyframes mobile2Heading {
+    from {
+        opacity: 0;
+        left: 80px;
+    }
+
+    to {
+        opacity: 1;
+        left: 180px;
+    }
+}
+
+@keyframes mobile2Heading2 {
+    from {
+        opacity: 0;
+        left: 280px;
+    }
+
+    to {
+        opacity: 1;
+        left: 186px;
+    }
+}
+
+@-webkit-keyframes mobile2Heading2 {
+    from {
+        opacity: 0;
+        left: 280px;
+    }
+
+    to {
+        opacity: 1;
+        left: 186px;
+    }
+}
+
+@keyframes mobile2SackLogo {
+    from {
+        opacity: 0;
+        height: 60px;
+        top: 80px;
+    }
+
+    to {
+        opacity: 1;
+        height: 140px;
+        top: 45px;
+    }
+}
+
+@-webkit-keyframes mobile2SackLogo {
+    from {
+        opacity: 0;
+        height: 60px;
+        top: 80px;
+    }
+
+    to {
+        opacity: 1;
+        height: 140px;
+        top: 45px;
+    }
+}
+
+@keyframes NavLabel2 {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 80px;
+    }
+}
+
+@-webkit-keyframes NavLabel2 {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 80px;
+    }
+}
+
+@keyframes NavLabel3 {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 60px;
+    }
+}
+
+@-webkit-keyframes NavLabel3 {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 60px;
+    }
+}
+
+@keyframes mobile3Heading {
+    from {
+        opacity: 0;
+        left: 20px;
+    }
+
+    to {
+        opacity: 1;
+        left: 120px;
+    }
+}
+
+@-webkit-keyframes mobile3Heading {
+    from {
+        opacity: 0;
+        left: 20px;
+    }
+
+    to {
+        opacity: 1;
+        left: 120px;
+    }
+}
+
+@keyframes mobile3Heading2 {
+    from {
+        opacity: 0;
+        left: 220px;
+    }
+
+    to {
+        opacity: 1;
+        left: 122px;
+    }
+}
+
+@-webkit-keyframes mobile3Heading2 {
+    from {
+        opacity: 0;
+        left: 220px;
+    }
+
+    to {
+        opacity: 1;
+        left: 122px;
+    }
+}
+
+@keyframes mobile3SackLogo {
+    from {
+        opacity: 0;
+        height: 30px;
+        top: 100px;
+    }
+
+    to {
+        opacity: 1;
+        height: 110px;
+        top: 65px;
+    }
+}
+
+@-webkit-keyframes mobile3SackLogo {
+    from {
+        opacity: 0;
+        height: 30px;
+        top: 100px;
+    }
+
+    to {
+        opacity: 1;
+        height: 110px;
+        top: 65px;
+    }
+}
+
+@keyframes NavLabel4 {
+    from {
+        left: 0px;
+        height: 50px;
+        top: 34px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 40px;
+        height: 50px;
+        top: 34px;
+    }
+}
+
+@-webkit-keyframes NavLabel4 {
+    from {
+        left: 0px;
+        height: 50px;
+        top: 34px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 40px;
+        height: 50px;
+        top: 34px;
+    }
+}
+
+@keyframes menu1 {
+    from {
+        right: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        right: 40px;
+    }
+}
+
+@-webkit-keyframes menu1 {
+    from {
+        right: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        right: 40px;
+    }
+}
+
+@keyframes menu2 {
+    from {
+        right: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        right: 25px;
+    }
+}
+
+@-webkit-keyframes menu2 {
+    from {
+        right: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        right: 25px;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .main-heading {
+        font-size: 60px;
+        left: 250px;
+        animation-name: mobileHeading;
+        animation-duration: 2s;
+        -webkit-animation-name: mobileHeading;
+        -webkit-animation-duration: 2s;
+    }
+
+    .sack-logo {
+        height: 160px;
+        left: 80px;
+        top: 25px;
+        animation-name: mobileSackLogo;
+        animation-duration: 2s;
+        -webkit-animation-name: mobileSackLogo;
+        -webkit-animation-duration: 2s;
+    }
+
+    .second-heading {
+        font-size: 18px;
+        left: 256px;
+        animation-name: mobileHeading2;
+        animation-duration: 2s;
+        -webkit-animation-name: mobileHeading2;
+        -webkit-animation-duration: 2s;
+    }
+
+    #nav-label{
+        left: 80px;
+        animation-name: NavLabel2;
+        animation-duration: 2s;
+        -webkit-animation-name: NavLabel2;
+        -webkit-animation-duration: 2s;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .main-heading {
+        font-size: 50px;
+        left: 180px;
+        animation-name: mobile2Heading;
+        animation-duration: 2s;
+        -webkit-animation-name: mobile2Heading;
+        -webkit-animation-duration: 2s;
+    }
+
+    .sack-logo {
+        height: 140px;
+        left: 35px;
+        top: 45px;
+        animation-name: mobile2SackLogo;
+        animation-duration: 2s;
+        -webkit-animation-name: mobile2SackLogo;
+        -webkit-animation-duration: 2s;
+    }
+
+    .second-heading {
+        font-size: 15px;
+        left: 186px;
+        animation-name: mobile2Heading2;
+        animation-duration: 2s;
+        -webkit-animation-name: mobile2Heading2;
+        -webkit-animation-duration: 2s;
+    }
+
+    #nav-label{
+        left: 60px;
+        animation-name: NavLabel3;
+        animation-duration: 2s;
+        -webkit-animation-name: NavLabel3;
+        -webkit-animation-duration: 2s;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .main-heading {
+        font-size: 35px;
+        left: 120px;
+        top: 170px;
+        animation-name: mobile3Heading;
+        animation-duration: 2s;
+        -webkit-animation-name: mobile3Heading;
+        -webkit-animation-duration: 2s;
+    }
+
+    .sack-logo {
+        height: 110px;
+        left: 5px;
+        top: 65px;
+        animation-name: mobile3SackLogo;
+        animation-duration: 2s;
+        -webkit-animation-name: mobile3SackLogo;
+        -webkit-animation-duration: 2s;
+    }
+
+    .second-heading {
+        font-size: 10px;
+        left: 122px;
+        top: 170px;
+        animation-name: mobile3Heading2;
+        animation-duration: 2s;
+        -webkit-animation-name: mobile3Heading2;
+        -webkit-animation-duration: 2s;
+    }
+
+    #nav-label{
+        left: 40px;
+        height: 50px;
+        top: 34px;
+        animation-name: NavLabel4;
+        animation-duration: 2s;
+        -webkit-animation-name: NavLabel4;
+        -webkit-animation-duration: 2s;
+    }
+
+    #hamburger{
+        right: 40px;
+        animation-name: menu1;
+        animation-duration: 2s;
+        -webkit-animation-name: menu1;
+        -webkit-animation-duration: 2s;
+    }
+
+    #close{
+        right: 25px;
+        animation-name: menu2;
+        animation-duration: 2s;
+        -webkit-animation-name: menu2;
+        -webkit-animation-duration: 2s;
     }
 }
