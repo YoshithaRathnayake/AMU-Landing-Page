@@ -51,148 +51,68 @@ html {
     scroll-padding-top: 74px;
 }
 
-.banner1,
-.banner2,
-.banner3,
-.banner4 {
+.bgImage {
+    position: relative;
+    width: 220vh;
     height: 100vh;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    background-image: url('../img/slider/img1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: bgChange 40s linear infinite;
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url('../img/slider/img1.jpg');
+    }
+
+    20% {
+        background-image: url('../img/slider/img1.jpg');
+    }
+
+    30% {
+        background-image: url('../img/slider/img2.jpg');
+    }
+
+    40% {
+        background-image: url('../img/slider/img2.jpg');
+    }
+
+    50% {
+        background-image: url('../img/slider/img3.jpg');
+    }
+
+    60% {
+        background-image: url('../img/slider/img3.jpg');
+    }
+
+    70% {
+        background-image: url('../img/slider/img4.jpg');
+    }
+
+    80% {
+        background-image: url('../img/slider/img4.jpg');
+    }
+
+    90% {
+        background-image: url('../img/slider/img5.jpg');
+    }
+
+    100% {
+        background-image: url('../img/slider/img5.jpg');
+    }
 }
 
 .overlay {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     backdrop-filter: blur(3px);
-    top: 0;
-}
-
-.sliderImage {
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-size: cover;
-    background-position: center;
-    transform: translate(-50%, -50%);
-    animation: zoomout 5s linear infinite;
-}
-
-@keyframes zoomout {
-    100% {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.banner1 {
-    animation: slide1 20s linear infinite;
-}
-
-.banner2 {
-    animation: slide2 20s linear infinite;
-}
-
-.banner3 {
-    animation: slide3 20s linear infinite;
-}
-
-.banner4 {
-    animation: slide4 20s linear infinite;
-}
-
-
-@keyframes slide1 {
-    0% {
-        visibility: visible;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes slide2 {
-    0% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: visible;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes slide3 {
-    0% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: visible;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes slide4 {
-    0% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: visible;
-    }
+    top: 0px;
+    left: 0px;
 }
 
 /* Navigation Bar */
@@ -374,6 +294,7 @@ html {
     border-radius: 5px;
     color: white;
 }
+
 
 /* Side-Bar Nav-Links */
 
@@ -568,7 +489,7 @@ html {
     font-size: 80px;
     color: white;
     position: relative;
-    top: 180px;
+    top: -490px;
     left: 300px;
     font-weight: 400;
     text-shadow: 0 0 30px black;
@@ -582,7 +503,7 @@ html {
     height: 180px;
     position: relative;
     left: 100px;
-    top: 5px;
+    top: -660px;
     text-shadow: 0 0 50px black;
     animation-name: sackLogo;
     animation-duration: 2s;
@@ -595,7 +516,7 @@ html {
     font-size: 23px;
     color: rgb(185, 185, 185);
     position: relative;
-    top: 180px;
+    top: -490px;
     left: 306px;
     font-weight: 400;
     text-shadow: 0 0 30px black;
@@ -608,19 +529,19 @@ html {
 .social-media {
     position: relative;
     left: 140px;
-    top: 80px;
+    top: -580px;
     word-spacing: 40px;
 }
 
 .social-media-icons {
     position: relative;
     height: 65px;
+    transition: 0.5s;
 }
 
 .social-media-icons:hover {
     cursor: pointer;
-    opacity: 0.6;
-    transition: 1s;
+    transform: translateY(-10px);
 }
 
 .footer {
@@ -628,12 +549,14 @@ html {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     height: 300px;
-    top: 175px;
+    top: -480px;
     box-shadow: 0 0 50px black;
+    backdrop-filter: blur(10px);
 }
 
 .amu-link {
     position: relative;
+    top: -5px;
     text-decoration: none;
     color: rgb(163, 163, 163);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -653,7 +576,7 @@ html {
 
     to {
         opacity: 1;
-        top: 0px;
+        top: -5px;
     }
 }
 
@@ -665,7 +588,7 @@ html {
 
     to {
         opacity: 1;
-        top: 200px;
+        top: -5px;
     }
 }
 
@@ -722,13 +645,13 @@ html {
     from {
         opacity: 0;
         height: 100px;
-        top: 30px;
+        top: -620px;
     }
 
     to {
         opacity: 1;
         height: 180px;
-        top: 5px;
+        top: -660px;
     }
 }
 
@@ -798,13 +721,13 @@ html {
     from {
         opacity: 0;
         height: 80px;
-        top: 60px;
+        top: -600px;
     }
 
     to {
         opacity: 1;
         height: 160px;
-        top: 25px;
+        top: -630px;
     }
 }
 
@@ -874,13 +797,13 @@ html {
     from {
         opacity: 0;
         height: 60px;
-        top: 80px;
+        top: -580px;
     }
 
     to {
         opacity: 1;
         height: 140px;
-        top: 45px;
+        top: -610px;
     }
 }
 
@@ -998,13 +921,13 @@ html {
     from {
         opacity: 0;
         height: 30px;
-        top: 100px;
+        top: -570px;
     }
 
     to {
         opacity: 1;
         height: 110px;
-        top: 65px;
+        top: -600px;
     }
 }
 
@@ -1115,7 +1038,7 @@ html {
     .sack-logo {
         height: 160px;
         left: 80px;
-        top: 25px;
+        top: -630px;
         animation-name: mobileSackLogo;
         animation-duration: 2s;
         -webkit-animation-name: mobileSackLogo;
@@ -1141,7 +1064,7 @@ html {
 
     .social-media {
         left: 110px;
-        top: 110px;
+        top: -540px;
         height: 40px;
         word-spacing: 35px;
     }
@@ -1151,7 +1074,7 @@ html {
     }
 
     .footer {
-        top: 250px;
+        top: -400px;
     }
 }
 
@@ -1168,7 +1091,7 @@ html {
     .sack-logo {
         height: 140px;
         left: 35px;
-        top: 45px;
+        top: -610px;
         animation-name: mobile2SackLogo;
         animation-duration: 2s;
         -webkit-animation-name: mobile2SackLogo;
@@ -1194,12 +1117,12 @@ html {
 
     .social-media {
         left: 60px;
-        top: 120px;
+        top: -530px;
         word-spacing: 25px;
     }
 
     .footer {
-        top: 285px;
+        top: -370px;
     }
 
 }
@@ -1208,7 +1131,7 @@ html {
     .main-heading {
         font-size: 35px;
         left: 120px;
-        top: 170px;
+        top: -500px;
         animation-name: mobile3Heading;
         animation-duration: 2s;
         -webkit-animation-name: mobile3Heading;
@@ -1218,7 +1141,7 @@ html {
     .sack-logo {
         height: 110px;
         left: 5px;
-        top: 65px;
+        top: -600px;
         animation-name: mobile3SackLogo;
         animation-duration: 2s;
         -webkit-animation-name: mobile3SackLogo;
@@ -1228,7 +1151,7 @@ html {
     .second-heading {
         font-size: 10px;
         left: 122px;
-        top: 170px;
+        top: -500px;
         animation-name: mobile3Heading2;
         animation-duration: 2s;
         -webkit-animation-name: mobile3Heading2;
@@ -1263,7 +1186,7 @@ html {
 
     .social-media {
         left: 20px;
-        top: 140px;
+        top: -530px;
         word-spacing: 20px;
     }
 
@@ -1272,7 +1195,7 @@ html {
     }
 
     .footer {
-        top: 340px;
+        top: -320px;
     }
 
     .amu-link {
