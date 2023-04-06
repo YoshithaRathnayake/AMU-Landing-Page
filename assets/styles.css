@@ -60,7 +60,7 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    animation: bgChange 40s linear infinite;
+    animation: bgChange 30s linear infinite;
 }
 
 @keyframes bgChange {
