@@ -31,6 +31,18 @@ body {
     }
 }
 
+::selection {
+    color: #89c3ea;
+    background: #14143b;
+}
+
+/* Firefox */
+
+::-moz-selection {
+    color: #89c3ea;
+    background: #14143b;
+}
+
 
 /* Scroll Behavior */
 
@@ -53,7 +65,7 @@ html {
 .overlay {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
     position: absolute;
     backdrop-filter: blur(3px);
     top: 0;
@@ -310,7 +322,7 @@ html {
     display: flex;
     float: right;
     position: relative;
-    right: 100px;
+    right: 80px;
     top: 45px;
     animation-name: NavLinks;
     animation-duration: 2s;
@@ -328,7 +340,7 @@ html {
 
     to {
         opacity: 1;
-        right: 100px;
+        right: 80px;
     }
 }
 
@@ -340,7 +352,7 @@ html {
 
     to {
         opacity: 1;
-        right: 100px;
+        right: 80px;
     }
 }
 
@@ -592,6 +604,71 @@ html {
     -webkit-animation-name: secondHeading;
     -webkit-animation-duration: 2s;
 }
+
+.social-media {
+    position: relative;
+    left: 140px;
+    top: 80px;
+    word-spacing: 40px;
+}
+
+.social-media-icons {
+    position: relative;
+    height: 65px;
+}
+
+.social-media-icons:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+.footer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    height: 300px;
+    top: 175px;
+    box-shadow: 0 0 50px black;
+}
+
+.amu-link {
+    position: relative;
+    text-decoration: none;
+    color: rgb(163, 163, 163);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    animation-name: copyright;
+    animation-duration: 2s;
+    -webkit-animation-name: copyright;
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes copyright {
+    from {
+        opacity: 0;
+        top: 100px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes copyright {
+    from {
+        opacity: 0;
+        top: 100px;
+    }
+
+    to {
+        opacity: 1;
+        top: 200px;
+    }
+}
+
 
 @keyframes mainHeading {
     from {
@@ -1054,12 +1131,27 @@ html {
         -webkit-animation-duration: 2s;
     }
 
-    #nav-label{
+    #nav-label {
         left: 80px;
         animation-name: NavLabel2;
         animation-duration: 2s;
         -webkit-animation-name: NavLabel2;
         -webkit-animation-duration: 2s;
+    }
+
+    .social-media {
+        left: 110px;
+        top: 110px;
+        height: 40px;
+        word-spacing: 35px;
+    }
+
+    .social-media-icons {
+        height: 55px;
+    }
+
+    .footer {
+        top: 250px;
     }
 }
 
@@ -1092,13 +1184,24 @@ html {
         -webkit-animation-duration: 2s;
     }
 
-    #nav-label{
+    #nav-label {
         left: 60px;
         animation-name: NavLabel3;
         animation-duration: 2s;
         -webkit-animation-name: NavLabel3;
         -webkit-animation-duration: 2s;
     }
+
+    .social-media {
+        left: 60px;
+        top: 120px;
+        word-spacing: 25px;
+    }
+
+    .footer {
+        top: 285px;
+    }
+
 }
 
 @media only screen and (max-width: 490px) {
@@ -1132,7 +1235,7 @@ html {
         -webkit-animation-duration: 2s;
     }
 
-    #nav-label{
+    #nav-label {
         left: 40px;
         height: 50px;
         top: 34px;
@@ -1142,7 +1245,7 @@ html {
         -webkit-animation-duration: 2s;
     }
 
-    #hamburger{
+    #hamburger {
         right: 40px;
         animation-name: menu1;
         animation-duration: 2s;
@@ -1150,11 +1253,29 @@ html {
         -webkit-animation-duration: 2s;
     }
 
-    #close{
+    #close {
         right: 25px;
         animation-name: menu2;
         animation-duration: 2s;
         -webkit-animation-name: menu2;
         -webkit-animation-duration: 2s;
+    }
+
+    .social-media {
+        left: 20px;
+        top: 140px;
+        word-spacing: 20px;
+    }
+
+    .social-media-icons {
+        height: 40px;
+    }
+
+    .footer {
+        top: 340px;
+    }
+
+    .amu-link {
+        font-size: 14px;
     }
 }
