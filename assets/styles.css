@@ -552,6 +552,7 @@ html {
     top: -480px;
     box-shadow: 0 0 50px black;
     backdrop-filter: blur(10px);
+    width: 180vh;
 }
 
 .amu-link {
